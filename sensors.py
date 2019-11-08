@@ -1,9 +1,9 @@
 import sys
 import json
 import serial
-sys.path.insert(0, './coms-python/Node.py')
+sys.path.insert(0, './comms-python/')
 
-import Node from Node
+from Node import Node
 
 # ser device names:
 # Co2 ppm
@@ -12,10 +12,10 @@ import Node from Node
 
 baud = 115200
 node = Node("sensors.json")
-ser = serial.Serial(sys.args[1])
+ser = serial.Serial(sys.argv[1], baud)
 while True:
     # parse the ser data to a json
-    msg = ser.readLine()
-    msg = msg.decode('ANSI')
-    node.send("sensors", msg)
+    msg = ser.readline()
+    msg = str(msg)
+    node.send("sensors-out", msg)
 

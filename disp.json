@@ -3,7 +3,7 @@
 	"topics": [
 		{
 			"name": "sensors-in",
-			"topics":"sensors",
+			"topic":"sensors",
 			"paradigm":"sub",
 			"protocol":"tcp",
 			"address": "127.0.0.1",

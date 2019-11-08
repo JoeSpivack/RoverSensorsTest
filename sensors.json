@@ -3,7 +3,7 @@
 	"topics": [
 		{
 			"name": "sensors-out",
-			"topics":"sensors",
+			"topic":"sensors",
 			"paradigm":"pub",
 			"protocol":"tcp",
 			"address": "127.0.0.1",
