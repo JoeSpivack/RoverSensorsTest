@@ -1,0 +1,13 @@
+{
+	"id": "display",
+	"topics": [
+		{
+			"name": "sensors-in",
+			"topics":"sensors",
+			"paradigm":"sub",
+			"protocol":"tcp",
+			"address": "127.0.0.1",
+			"port":"6789"
+		}
+	]
+}
